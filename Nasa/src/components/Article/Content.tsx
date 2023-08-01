@@ -1,28 +1,22 @@
 import { useFetch } from "../../hook/useFetch";
 import { apiProps } from "../../types/Api";
 
-export type apiProps = {
-    date: number;
-    explanation: string;
-    url: string;
-  };
-  
-
 export default function Content() {
-  const data = useFetch<apiProps>([]);
-  console.log(data);
+  const { data } = useFetch<apiProps>(
+    "https://api.nasa.gov/planetary/apod?api_key=QhiFx7qkJb1PB7PPGV5ZKzrtWdSKHKa0oiCbxFqJ"
+  );
 
   return (
     <div>
-      <ul>
-        <li>
-          <small>{data?.date}</small>
+      <ul className="flex flex-col gap-4">
+        <li className="text-center text-4xl font-bold">
+          <small>{data?.title}</small>
+        </li>
+        <li className="text-md">
+          <p className="italic">{data?.explanation}</p>
         </li>
         <li>
-          <p>{data?.explanation}</p>
-        </li>
-        <li>
-          <img src={data?.url} alt="" />
+          <small className="text-red-700">{data?.date}</small>
         </li>
       </ul>
     </div>

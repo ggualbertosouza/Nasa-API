@@ -1,6 +1,6 @@
 export type apiProps = {
-    date: number;
-    explanation: string;
-    url: string;
-  };
-  
+  date: number;
+  explanation: string;
+  url: string;
+  title: string;
+};
