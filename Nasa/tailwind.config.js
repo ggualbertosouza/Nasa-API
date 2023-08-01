@@ -2,7 +2,12 @@
 export default {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'Handjet': ['Handjet', 'cursive'],
+       
+      },
+    },
   },
   plugins: [],
 };
