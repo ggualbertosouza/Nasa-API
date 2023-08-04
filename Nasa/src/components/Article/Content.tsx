@@ -1,6 +1,5 @@
 import { useFetch } from "../../hook/useFetch";
 import { apiProps } from "../../types/Api";
-import Button from "../Buttons/Button";
 
 export default function Content() {
   const { data } = useFetch<apiProps>(
@@ -19,7 +18,6 @@ export default function Content() {
         <li>
           <small className="text-red-700">{data?.date}</small>
         </li>
-        <li className="self-center"><Button> <i class="fa-brands fa-space-awesome"></i> Visit Nasa</Button></li>
       </ul>
       
     </div>
