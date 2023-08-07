@@ -3,10 +3,8 @@ import Title from "../components/Titles/Titles";
 
 export default function Home() {
   return (
-    <div className="space-y-12">
-      <Title>
-        Astronomy Picture of the Day
-      </Title>  
+    <div className="">
+      <Title>Astronomy Picture of the Day</Title>
       <Article />
     </div>
   );

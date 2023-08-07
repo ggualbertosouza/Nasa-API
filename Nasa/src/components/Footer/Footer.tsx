@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-between p-4 text-md shadow-lg shadow-white">
+    <footer className="flex items-center justify-between p-4 text-md shadow-lg shadow-white absolute bottom-0 w-full">
       <div className="flex gap-4 font-semibold">
         <a href="https://github.com/ggualbertosouza">
           <i className="fa-brands fa-github"></i> GitHub

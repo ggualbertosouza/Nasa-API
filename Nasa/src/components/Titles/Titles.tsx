@@ -10,7 +10,7 @@ export default function Title({children}: IProps, props: AProps): JSX.Element {
       <a
         href="https://apod.nasa.gov/apod/astropix.html"
         target="_blank"
-        className="text-6xl  font-bold flex justify-center cursor-pointer font-Handjet "
+        className="text-6xl font-bold flex justify-center cursor-pointer font-Handjet "
         {...props}
         >
           {children}

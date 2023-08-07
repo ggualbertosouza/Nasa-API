@@ -9,12 +9,12 @@ export default function Article() {
   );
 
   return (
-    <main className="flex w-4/5 mx-auto min-h-screen p-6 justify-center items-center gap-4 shadow-lg shadow-white rounded-3xl bg-neutral-950 flex-col xl:text-3xl">
-      <div className="flex sm:flex-col items-center gap-2">
+    <main className="flex w-4/5 mx-auto  p-6 justify-center items-center gap-4 shadow-lg shadow-white rounded-3xl bg-neutral-950 flex-col xl:text-3xl">
+      <div className="flex  items-center gap-2">
         <section className="w-3/5 sm:w-full ">
           <Content />
         </section>
-        <div className="h-96 overflow-hidden w-full h-auto rounded-md">
+        <div className=" overflow-hidden w-full h-auto rounded-md">
           <img
             className="w-full h-full bg-center object-cover"
             src={data?.url}

@@ -9,10 +9,10 @@ export default function Content() {
   return (
     <div>
       <ul className="flex flex-col gap-4 ">
-        <li className="text-center text-4xl font-bold">
+        <li className="text-center text-3xl font-bold">
           <small>{data?.title}</small>
         </li>
-        <li className="text-md">
+        <li className="text-sm">
           <p className="italic">{data?.explanation}</p>
         </li>
         <li>
