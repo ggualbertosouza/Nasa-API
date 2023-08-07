@@ -3,7 +3,7 @@ import Title from "../components/Titles/Titles";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <Title>Astronomy Picture of the Day</Title>
       <Article />
     </div>

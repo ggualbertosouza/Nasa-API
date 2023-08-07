@@ -8,11 +8,11 @@ export default function Content() {
 
   return (
     <div>
-      <ul className="flex flex-col gap-4 ">
-        <li className="text-center text-3xl font-bold">
+      <ul className="flex flex-col gap-1 ">
+        <li className="text-center font-bold sm:text-md lg:text-4xl">
           <small>{data?.title}</small>
         </li>
-        <li className="text-sm">
+        <li className="text-sm lg:text-lg md:text-md">
           <p className="italic">{data?.explanation}</p>
         </li>
         <li>

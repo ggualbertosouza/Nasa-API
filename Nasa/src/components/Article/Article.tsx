@@ -9,21 +9,26 @@ export default function Article() {
   );
 
   return (
-    <main className="flex w-4/5 mx-auto  p-6 justify-center items-center gap-4 shadow-lg shadow-white rounded-3xl bg-neutral-950 flex-col xl:text-3xl">
-      <div className="flex  items-center gap-2">
-        <section className="w-3/5 sm:w-full ">
-          <Content />
-        </section>
-        <div className=" overflow-hidden w-full h-auto rounded-md">
-          <img
-            className="w-full h-full bg-center object-cover"
-            src={data?.url}
-            alt="Nasa image"
-          />
-        </div>
-      </div>
-      <Button><i className="fa-brands fa-space-awesome"></i> Visit Nasa</Button>
+    <main className="h-full" >
+      <div className="flex flex-col gap-4 mx-6 p-8 justify-center items-center shadow-md shadow-white rounded-3xl bg-neutral-950  xl:text-3xl">
+        <div className="flex sm:flex-col xl:flex-row items-center justify-center gap-2 ">
+          <section className="xl:w-2/3 sm:w-full ">
+            <Content />
+          </section>
 
+          <div className=" ">
+            <img
+              className="h-full w-full bg-center object-cover rounded-md"
+              src={data?.url}
+              alt="Nasa image"
+            />
+          </div>
+        </div>
+
+        <Button>
+          <i className="fa-brands fa-space-awesome"></i> Visit Nasa
+        </Button>
+      </div>
     </main>
   );
 }
